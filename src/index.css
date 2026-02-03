@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-coffee-bg text-coffee-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-coffee-dark font-sans font-bold;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
+}
+
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-lg border-b border-white/10 shadow-sm;
+}
